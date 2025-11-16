@@ -32,6 +32,9 @@ jobs:
       - name: Run tests and generate report
         run: mvn clean verify
         continue-on-error: true
+        env:
+          LANG: es_ES.UTF-8
+          LC_ALL: es_ES.UTF-8
 
       - name: Deploy report to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.8
