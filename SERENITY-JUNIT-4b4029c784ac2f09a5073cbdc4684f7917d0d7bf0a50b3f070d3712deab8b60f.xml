@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Búsqueda de contenido en Spotify" skipped="0" tests="1" time="22.07" timestamp="2025-11-16 06:49:34"><testcase name="Búsqueda de canciones/artistas"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Búsqueda de contenido en Spotify" skipped="0" tests="1" time="24.14" timestamp="2025-11-16 07:02:11"><testcase name="Búsqueda de canciones/artistas"><failure message="Expected:  that is true&#10;Actual:   false" type="java.lang.AssertionError">Expected:  that is true
+Actual:   false</failure><system-err>Expected:  that is true
+Actual:   false
+com.castor.stepdefinitions.SearchStepDefinitions.deberiaVisualizarResultadosRelacionadosCon(SearchStepDefinitions.java:31)
+✽.debería visualizar resultados relacionados con "Coldplay"(classpath:features/search.feature:8)
+</system-err></testcase></testsuite>
