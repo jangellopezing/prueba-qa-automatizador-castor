@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Navegación y exploración de playlists" skipped="0" tests="1" time="19.97" timestamp="2025-11-16 06:37:21"><testcase name="Navegación a playlists populares"><failure message="&#10;Expected: an element that is clickable&#10;     but: no matching element found by [Top lists button located with: xpath: //span[@title='Listas de éxitos']] was not clickable" type="java.lang.AssertionError">
-Expected: an element that is clickable
-     but: no matching element found by [Top lists button located with: xpath: //span[@title='Listas de éxitos']] was not clickable</failure><system-err>
-Expected: an element that is clickable
-     but: no matching element found by [Top lists button located with: xpath: //span[@title='Listas de éxitos']] was not clickable
-com.castor.tasks.BrowseTopListsSection.performAs(BrowseTopListsSection.java:23)
-com.castor.stepdefinitions.PlaylistsStepDefinitions.navegaALaSeccionDeTopListas(PlaylistsStepDefinitions.java:14)
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Navegación y exploración de playlists" skipped="0" tests="1" time="21.16" timestamp="2025-11-16 06:49:34"><testcase name="Navegación a playlists populares"/></testsuite>
