@@ -18,5 +18,5 @@ public class LoginPage {
             .located(By.cssSelector("[data-testid='login-button']"));
 
     public static final Target ERROR_MESSAGE_CONTAINER = Target.the("Error message container")
-            .located(By.xpath("//span[text()='Nombre de usuario o contraseña incorrectos.']"));
+            .located(By.cssSelector("[data-encore-id='banner'][role='alert']"));
 }

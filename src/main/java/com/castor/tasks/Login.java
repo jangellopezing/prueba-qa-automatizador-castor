@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.conditions.Check;
+import net.serenitybdd.screenplay.questions.Visibility;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import java.time.Duration;
@@ -36,13 +38,16 @@ public class Login implements Task {
                 WaitUntil.the(LoginPage.LOGIN_BUTTON, isClickable()).forNoMoreThan(Duration.ofSeconds(10)),
                 Click.on(LoginPage.LOGIN_BUTTON),
 
-                WaitUntil.the(LoginPage.LOGIN_WITH_PASSWORD_BUTTON, isVisible()).forNoMoreThan(Duration.ofSeconds(10)),
-                Click.on(LoginPage.LOGIN_WITH_PASSWORD_BUTTON),
+                Check.whether(Visibility.of(LoginPage.ERROR_MESSAGE_CONTAINER))
+                        .otherwise(
+                                WaitUntil.the(LoginPage.LOGIN_WITH_PASSWORD_BUTTON, isVisible()).forNoMoreThan(Duration.ofSeconds(10)),
+                                Click.on(LoginPage.LOGIN_WITH_PASSWORD_BUTTON),
 
-                WaitUntil.the(LoginPage.PASSWORD_INPUT, isVisible()).forNoMoreThan(Duration.ofSeconds(10)),
-                Enter.theValue(password).into(LoginPage.PASSWORD_INPUT),
+                                WaitUntil.the(LoginPage.PASSWORD_INPUT, isVisible()).forNoMoreThan(Duration.ofSeconds(10)),
+                                Enter.theValue(password).into(LoginPage.PASSWORD_INPUT),
 
-                Click.on(LoginPage.LOGIN_BUTTON)
+                                Click.on(LoginPage.LOGIN_BUTTON)
+                        )
         );
     }
 }
