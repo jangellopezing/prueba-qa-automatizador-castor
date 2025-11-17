@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Autenticación de usuarios en Spotify" skipped="0" tests="1" time="25.88" timestamp="2025-11-17 04:35:06"><testcase name="Intento de login con credenciales inválidas"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by [Login with password button located with: xpath: //button[text()='Iniciar sesión con contraseña']]" type="java.lang.AssertionError">
-Expected: an element that is visible
-     but: no matching element found by [Login with password button located with: xpath: //button[text()='Iniciar sesión con contraseña']]</failure><system-err>
-Expected: an element that is visible
-     but: no matching element found by [Login with password button located with: xpath: //button[text()='Iniciar sesión con contraseña']]
-com.castor.tasks.Login.performAs(Login.java:32)
-com.castor.stepdefinitions.AuthenticationStepDefinitions.intentaIniciarSesionConCredencialesInvalidas(AuthenticationStepDefinitions.java:36)
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Autenticación de usuarios en Spotify" skipped="0" tests="1" time="14.54" timestamp="2025-11-17 04:54:17"><testcase name="Intento de login con credenciales inválidas"/></testsuite>
