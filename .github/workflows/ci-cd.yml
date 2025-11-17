@@ -19,8 +19,9 @@ jobs:
 
       - name: Configure Spanish locale
         run: |
+          sudo apt-get update
+          sudo apt-get install -y locales
           sudo locale-gen es_ES.UTF-8
-          sudo update-locale LANG=es_ES.UTF-8
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -35,7 +36,11 @@ jobs:
           npx @puppeteer/browsers install chrome@stable
 
       - name: Run tests and generate report
-        run: mvn clean verify
+        run: |
+          export LANG=es_ES.UTF-8
+          export LANGUAGE=es_ES.UTF-8
+          export LC_ALL=es_ES.UTF-8
+          mvn clean verify
         continue-on-error: true
 
       - name: Deploy report to GitHub Pages
