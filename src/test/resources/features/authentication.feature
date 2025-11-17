@@ -6,5 +6,5 @@ Característica: Autenticación de usuarios en Spotify
     Dado que Jose está en la página de login
     Cuando intenta iniciar sesión con credenciales inválidas
       | email                  | password |
-      | yipasoc225@fermiro.com | 12345    |
+      | xedola7361@fermiro.com | 12345    |
     Entonces debería ver un mensaje de error de autenticación
