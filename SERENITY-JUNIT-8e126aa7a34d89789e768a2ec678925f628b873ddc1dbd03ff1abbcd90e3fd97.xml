@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Autenticación de usuarios en Spotify" skipped="0" tests="1" time="14.54" timestamp="2025-11-17 04:54:17"><testcase name="Intento de login con credenciales inválidas"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Autenticación de usuarios en Spotify" skipped="0" tests="1" time="8.27" timestamp="2025-11-17 05:03:29"><testcase name="Intento de login con credenciales inválidas"/></testsuite>
