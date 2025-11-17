@@ -148,6 +148,16 @@ Si "Login con credenciales inválidas" falla, revisar si:
 
 ---
 
+## 🌐 Evidencia del reporte en línea (CI/CD)
+
+El proyecto utiliza **GitHub Actions** para la ejecución automática de las pruebas.
+
+📊 **Reporte actualizado:** [https://jangellopezing.github.io/prueba-qa-automatizador-castor/](https://jangellopezing.github.io/prueba-qa-automatizador-castor/)
+
+El reporte se genera y se publica automáticamente en GitHub Pages después de cada ejecución del pipeline.
+
+---
+
 ## 👤 Autor
 **Jose Angel Lopez - QA Automation**  
 jangel.lopez.ing@gmail.com
